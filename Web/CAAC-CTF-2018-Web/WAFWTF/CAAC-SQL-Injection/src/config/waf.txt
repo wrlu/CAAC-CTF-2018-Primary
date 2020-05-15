@@ -1,0 +1,17 @@
+ 
+=
+'
+select
+SELECT
+union
+UNION
+where
+WHERE
+OR
+or
+information_schema
+INFORMATION_SCHEMA
+column
+COLUMN
+table
+TABLE

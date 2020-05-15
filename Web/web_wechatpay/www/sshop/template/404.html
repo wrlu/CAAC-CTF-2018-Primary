@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404</title>
+
+	<link rel="stylesheet" href="{{ static_url('css/style.css') }}" />
+	
+</head>
+<body>
+
+{% try %}
+	{% if flag %}
+	<p>{{ flag }}</p>
+	{% end %}
+{% except %}
+{% end %}
+	<nav class="shelf">
+	  <a class="book home-page">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	  <a class="book about-us" >&nbsp;&nbsp;&nbsp;</a>
+	  <a class="book contact">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	  <a class="book faq">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	  
+	  <span class="book not-found"></span>
+	 
+	  <span class="door left"></span>
+	  <span class="door right"></span>
+	</nav>
+	<h1>Error 404</h1>
+	<p>糟糕，您要找的书籍不在书架中。。。</p>
+	
+</body>
+</html>

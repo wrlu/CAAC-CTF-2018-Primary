@@ -1,0 +1,12 @@
+<?php
+    $flag='flag.txt';
+    extract($_GET);
+    if(isset($gift)){
+        $content=trim(file_get_contents($flag));
+        if($gift==$content){
+            echo'flag{...}';
+        }else{
+            echo'Oh..';
+        }
+    }
+?>

@@ -1,0 +1,13 @@
+<?php
+$con = mysql_connect("localhost","root","root");
+if (!$con) {
+  die('Could not connect: ' . mysql_error());
+}
+mysql_select_db("caac", $con);
+$result = mysql_query("select flag from include;");
+while($row = mysql_fetch_array($result)) {
+  echo $row['flag'];
+  echo "<br />";
+}
+mysql_close($con);
+?>
